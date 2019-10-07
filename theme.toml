@@ -1,0 +1,12 @@
+name = "nutshell"
+description = "A simple theme for zola"
+license = "MIT"
+homepage = "https://github.com/kemingy/nutshell"
+min_version = "0.9.0"
+demo = ""
+
+[extra]
+
+[author]
+name = "Keming Yang"
+homepage = "https://github.com/kemingy"
