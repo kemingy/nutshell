@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    <link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
+
+    {% if config.generate_rss %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endif %}
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Homepage</a></li>
+        </ul>
+    </nav>
+    <article class="container">
+        {% block content %}
+            <div class="posts">
+                {% for page in section.pages %}
+                    <div class="post">
+                        <h2 class="post-title">
+                            <a href="{{ page.permalink }}">
+                                {% if page.title %}
+                                    {{ page.title }}
+                                {% else %}
+                                    {{ page.slug | capitalize }}
+                                {% endif %}
+                            </a>
+                        </h2>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endblock content %}
+    </article>
+    <footer>
+        <p>&copy; 2019</p>
+    </footer>
+</body>
+</html>
