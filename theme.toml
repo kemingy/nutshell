@@ -6,7 +6,19 @@ min_version = "0.9.0"
 demo = ""
 
 [extra]
+theme_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/about", name = "About"},
+    {url = "$BASE_URL/projects", name = "Projects"},
+]
+theme_title = "Nutshell"
+katex = true
 
 [author]
 name = "Keming Yang"
 homepage = "https://github.com/kemingy"
+
+[original]
+name = "Vincent Prouillet"
+homepage = "https://www.vincentprouillet.com"

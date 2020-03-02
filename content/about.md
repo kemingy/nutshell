@@ -1,4 +1,5 @@
 +++
+template = "blank.html"
 +++
 
 # About

@@ -1,0 +1,27 @@
+@import "normalize";
+
+$main-color: #84bf54;
+$secondary-color: #33a4cd;
+$body-width: 1240px;
+$mobile-navbar-height: 50px !default;
+$code-color: #2e9449;
+$code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
+$decoration-font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+
+@mixin min-screen($min-width: $body-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin max-screen($max-width: $body-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@import "base";
+// @import "header";
+// @import "main";
+// @import "mobile";
+// @import "toc";
