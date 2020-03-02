@@ -1,15 +1,3 @@
 +++
-template = "blank.html"
+template = "archive.html"
 +++
-
-# Archive
-
-{% for year, posts in section.pages | group_by(attribute="year") %}
-    <h2>{{ year }}</h2>
-
-    <ul>
-    {% for post in posts %}
-        <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-{% endfor %}

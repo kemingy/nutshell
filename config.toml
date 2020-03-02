@@ -18,10 +18,10 @@ taxonomies = [
 ]
 
 [extra]
-# Put all your custom variables here
 theme_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/archive", name = "Archive"},
     {url = "$BASE_URL/about", name = "About"},
     {url = "$BASE_URL/projects", name = "Projects"},
 ]

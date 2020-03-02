@@ -80,6 +80,7 @@
             <div class="content">
                 {% block content %}
                 <div class="posts">
+                    {% set paginator = get_section(path="blogs/_index.md") %}
                     {% for page in paginator.pages %}
                     <article class="post">
                         <div class="post-title">

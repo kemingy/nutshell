@@ -2,6 +2,6 @@
 template = "blank.html"
 +++
 
-## About
+## Projects
 
-hello zola
+* hello world
