@@ -1,10 +1,13 @@
 @import "normalize";
 
-$main-color: #84bf54;
-$secondary-color: #33a4cd;
-$body-width: 1240px;
+$main-color: #9c2e2e;
+$secondary-color: #ecd9d5;
+$body-width: 1080px;
+$mobile-width: 600px !default;
+$font-size: 16px;
 $mobile-navbar-height: 50px !default;
-$code-color: #2e9449;
+$spacing-unit: 30px !default;
+$code-color: #c7254e;
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 $decoration-font-family: Athelas, STHeiti, Microsoft Yahei, serif;
 
@@ -20,8 +23,9 @@ $decoration-font-family: Athelas, STHeiti, Microsoft Yahei, serif;
   }
 }
 
+@import "animations";
 @import "base";
 @import "header";
-// @import "main";
-// @import "mobile";
-// @import "toc";
+@import "main";
+@import "mobile";
+@import "toc";

@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: $font-size;
   box-sizing: border-box;
 }
 
@@ -44,7 +44,8 @@ pre {
   padding: 1rem;
 }
 
-pre, code {
+pre,
+code {
   font-size: 90%;
   overflow: auto;
   font-family: $code-font-family;
