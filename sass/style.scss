@@ -11,7 +11,7 @@ $code-color: #c7254e;
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 $decoration-font-family: Athelas, STHeiti, Microsoft Yahei, serif;
 
-@mixin min-screen($min-width: $body-width) {
+@mixin min-screen($min-width: $mobile-width) {
   @media screen and (min-width: $min-width) {
     @content;
   }

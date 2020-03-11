@@ -38,16 +38,16 @@
     <div class="container">
         <div class="mobile-navbar">
             <div class="mobile-header">
-                <a href="/" class="title">{{ config.extra.theme_title }}</a>
+                <a href="/" class="title">{{ config.title }}</a>
             </div>
-            <div class="mobile-navbar-icon">
+            <div class="mobile-navbar-icon icon-out" id="mobile-nav-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
 
-        <nav class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu">
             <ul class="mobile-menu-list">
                 {% for item in config.extra.theme_menu %}
                 <li class="mobile-menu-item">
@@ -61,7 +61,7 @@
 
         <header>
             <div class="title">
-                <a href="{{ config.base_url }}">{{ config.extra.theme_title }}</a>
+                <a href="{{ config.base_url }}">{{ config.title }}</a>
             </div>
             <nav class="menu">
                 <ul>
@@ -120,6 +120,10 @@
         {% block footer %}
         {% endblock footer %}
     </div>
+
+    {% block js_body %}
+    <script src="{{ get_url(path="script.js", trailing_slash=false) }}"></script>
+    {% endblock js_body %}
 </body>
 
 </html>

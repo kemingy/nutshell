@@ -19,11 +19,11 @@
     transform: translate3d(180px, 0px, 0px);
   }
 
-  .mobile-header-logo {
+  .mobile-header {
     display: inline-block;
     margin-right: 50px;
 
-    .logo {
+    .title {
       font-size: 22px;
       line-height: $mobile-navbar-height;
     }
@@ -72,5 +72,14 @@
 @include max-screen() {
   .mobile-navbar {
     display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@include min-screen() {
+  .mobile-menu {
+    display: none;
   }
 }
