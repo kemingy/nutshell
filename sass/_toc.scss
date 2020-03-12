@@ -1,5 +1,5 @@
 $toc-margin-left: $body-width - 15px !default;
-$toc-max-sreen-width: 2 * 200px + $toc-margin-left !default;
+$toc-max-screen-width: 2 * 200px + $toc-margin-left !default;
 
 .toc {
   position: absolute;
@@ -51,7 +51,7 @@ $toc-max-sreen-width: 2 * 200px + $toc-margin-left !default;
     }
   }
 }
-@include max-screen($toc-max-sreen-width) {
+@include max-screen($toc-max-screen-width) {
   .toc {
     display: none;
   }

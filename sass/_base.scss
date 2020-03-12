@@ -5,8 +5,8 @@ html {
 
 body {
   line-height: 1.5;
-  color: #040805;
-  background-color: #fefefe;
+  color: $text-color;
+  background-color: $bg-color;
   border-top: 3px solid $main-color;
 }
 
@@ -23,7 +23,7 @@ body {
 
   .container {
     width: 100%;
-    box-shadow: -1px -5px 5px #cacaca;
+    box-shadow: -1px -5px 5px $shadow-color;
   }
 }
 

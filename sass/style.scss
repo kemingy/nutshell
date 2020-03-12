@@ -1,13 +1,21 @@
 @import "normalize";
 
-$main-color: #9c2e2e;
-$secondary-color: #ecd9d5;
+$main-color: #000;
+$secondary-color: #cecece;
+$text-color: #040506;
+$bg-color: #fefefe;
+$code-color: #233;
+$shadow-color: #cacaca;
+$link-color: #34495e;
+$bq-bg-color: rgba(39, 34, 34, 0.075);
+$bq-border-left-color: rgba(19, 18, 18, 0.856);
+$box-shadow-color: rgba(0, 0, 0, 0.125);
+$border-color: #e6e6e6;
 $body-width: 1080px;
 $mobile-width: 600px !default;
 $font-size: 16px;
 $mobile-navbar-height: 50px !default;
 $spacing-unit: 30px !default;
-$code-color: #c7254e;
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 $decoration-font-family: Athelas, STHeiti, Microsoft Yahei, serif;
 
