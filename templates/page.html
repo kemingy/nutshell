@@ -8,7 +8,7 @@
 {% if page.toc %}
 <div class="toc">
     <h2 class="toc-title">Contents</h2>
-    <div class="toc-content">
+    <div class="toc-content always-active">
         <ul>
             {% for h1 in page.toc %}
             <li>
@@ -35,11 +35,13 @@
     </div>
     <div class="post-meta">
         <span class="post-time">{{ page.date | date(format="%F") }}</span>
-        {% if page.category %}
+        {% if page.taxonomies.categories %}
         <div class="post-category">
-            <a href="{{ get_taxonomy_url(kind="category", name=page.category) }}">
-                {{ page.category }}
+            {% for category in page.taxonomies.categories %}
+            <a href="{{ get_taxonomy_url(kind="categories", name=category) }}">
+                {{ category }}
             </a>
+            {% endfor %}
         </div>
         {% endif %}
     </div>
@@ -52,11 +54,6 @@
 
     <div class="post-footer">
         {% block page_footer %}
-        {% if page.taxonomies.tags %}
-        <div class="post-tags">
-            {% for tag in page.taxonomies.tags %}
-            <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">#{{ tag }}</a>
-            {% endfor %}
             {% if page.earlier or page.later or page.lighter or page.heavier %}
             <div class="post-nav">
                 {% if page.earlier %}
@@ -73,8 +70,6 @@
                 {% endif %}
             </div>
             {% endif %}
-        </div>
-        {% endif %}
         {% endblock page_footer %}
     </div>
 </article>
