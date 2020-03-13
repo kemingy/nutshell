@@ -35,11 +35,12 @@ jobs:
         git config --global url."https://".insteadOf git://
         git config --global url."https://github.com/".insteadOf git@github.com:
         git submodule update --init --recursive
-        remote_repo="https://${GITHUB_TOKEN}@github.com/kemingy/nutshell.git"
+        remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         remote_branch=gh-pages
         
         zola build
         cd public
+        touch .nojekyll
         git init
         git config user.name "github-actions-bot"
         git config user.email "github-actions-bot@users.noreply.github.com"
