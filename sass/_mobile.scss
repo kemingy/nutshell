@@ -76,6 +76,9 @@
   .mobile-menu {
     display: none;
   }
+  .gradient {
+    display: none;
+  }
 }
 
 @include min-screen() {
