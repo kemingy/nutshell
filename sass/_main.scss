@@ -126,6 +126,10 @@ main {
       @include underline-from-center;
     }
 
+    &-content {
+      overflow: auto;
+    }
+
     &-category {
       display: inline;
 
