@@ -89,12 +89,19 @@
                             <a href="{{ page.permalink }}">{{ page.title }}</a>
                         </div>
                         <div class="post-meta">
-                            <span class="post-time">{{ page.date | date(format="%F") }}</span>
-                            {% if page.category %}
+                            <span class="post-time">
+                                📅 {{ page.date | date(format="%F") }}
+                            </span>
+                            <span class="post-reading-time">
+                                ⌛ {{ page.reading_time }} min
+                            </span>
+                            {% if page.taxonomies.categories %}
                             <div class="post-category">
-                                <a href="{{ get_taxonomy_url(kind="category", name=page.category) }}">
-                                    {{ page.category }}
+                                {% for category in page.taxonomies.categories %}
+                                <a href="{{ get_taxonomy_url(kind="categories", name=category) }}">
+                                    {{ category }}
                                 </a>
+                                {% endfor %}
                             </div>
                             {% endif %}
                         </div>

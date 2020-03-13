@@ -4,4 +4,15 @@
 <div class="blank">
     {{ page.content | safe }}
 </div>
+
 {% endblock content %}
+
+{% block footer %}
+<div class="page-footer">
+    Powered by 
+    <a href="https://github.com/getzola/zola">Zola</a> Written with
+    <a href="https://www.rust-lang.org/">Rust</a>.
+    Theme by 
+    <a href="https://github.com/kemingy/nutshell">nutshell</a>
+</div>
+{% endblock footer %}
