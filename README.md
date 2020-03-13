@@ -16,12 +16,11 @@ A theme for [Zola](https://www.getzola.org/) based on [Even](https://github.com/
 
 ## Install
 
-Download it to your `themes` direction:
+Download it to your `themes` direction as a git submodule:
 
 ```sh
-mkdir -p themes
 cd themes
-git clone https://github.com/kemingy/nutshell.git
+git submodule add https://github.com/kemingy/nutshell.git themes/nutshell
 ```
 
 Enable it in your `config.toml` with taxonomies:
