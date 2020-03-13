@@ -1,8 +1,10 @@
 # Nutshell
 
+![pages](https://github.com/kemingy/nutshell/workflows/pages/badge.svg)
+
 A theme for [Zola](https://www.getzola.org/) based on [Even](https://github.com/getzola/even).
 
-[Live demo](./)
+[Live demo]([./](https://kemingy.github.io/nutshell/))
 
 ## Features
 
