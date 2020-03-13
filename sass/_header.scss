@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
 
   .title {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: fantasy;
     font-weight: 400;
 
     a {
@@ -15,7 +15,6 @@ header {
 
   .menu {
     align-self: flex-start;
-    font-family: $decoration-font-family;
 
     ul {
       display: inline-block;

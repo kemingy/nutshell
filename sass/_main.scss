@@ -11,9 +11,9 @@ main {
   }
 
   .read-more a {
-    color: $main-color;
-    font-family: $decoration-font-family;
-    font-size: 1.1rem;
+    color: $link-color;
+    font-family: $font-family;
+    font-size: 0.9rem;
 
     &:hover {
       text-decoration: underline;
@@ -25,7 +25,7 @@ main {
     padding: 1.5rem 0;
 
     .post-title {
-      font-family: $decoration-font-family;
+      font-family: $font-family;
 
       a {
         color: $link-color;
@@ -185,7 +185,7 @@ main {
 
   .pagination {
     clear: both;
-    font-family: $decoration-font-family;
+    font-family: $font-family;
     margin: 2rem 0;
 
     a {
@@ -196,7 +196,6 @@ main {
 
 .next,
 .previous {
-  font-weight: 600;
   font-size: 20px;
   transition: transform 0.3s ease-out;
 
@@ -286,4 +285,10 @@ main {
       border-bottom: 1px solid $main-color;
     }
   }
+}
+
+.gradient {
+  height: 2px;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }

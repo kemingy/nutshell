@@ -1,16 +1,22 @@
 {% extends "index.html" %}
 
 {% block content %}
-<div class="archive">
+<div class="taxonomy">
     {% set blogs = get_section(path="blogs/_index.md") %}
     {% for year, posts in blogs.pages | group_by(attribute="year") %}
     <h2>{{ year }}</h2>
 
-    <ul>
-        {% for post in posts %}
-        <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
+    {% for post in posts %}
+    <div class="taxonomy-item">
+        <span class="taxonomy-item-time">
+            {{ post.date | date(format="%F") }}
+        </span>
+        <span class="taxonomy-item-title">
+            <a href="{{ post.permalink }}">{{ post.title }}</a>
+        </span>
+    </div>
+    {% endfor %}
+
     {% endfor %}
 </div>
 {% endblock content %}
