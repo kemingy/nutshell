@@ -4,7 +4,7 @@ base_url = "https://kemingy.github.io/nutshell/"
 compile_sass = true
 generate_rss = true
 
-title = "Cyanide"
+title = "Nutshell"
 description = ""
 
 highlight_code = true
