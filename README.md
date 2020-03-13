@@ -4,7 +4,7 @@
 
 A theme for [Zola](https://www.getzola.org/) based on [Even](https://github.com/getzola/even).
 
-[Live demo]([./](https://kemingy.github.io/nutshell/))
+[Live demo](https://kemingy.github.io/nutshell/)
 
 ## Features
 
