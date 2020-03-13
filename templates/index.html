@@ -81,9 +81,9 @@
         <main>
             <div class="content">
                 {% block content %}
+                {% set section = get_section(path="blogs/_index.md") %}
                 <div class="posts">
-                    {% set paginator = get_section(path="blogs/_index.md") %}
-                    {% for page in paginator.pages %}
+                    {% for page in section.pages %}
                     <article class="post">
                         <div class="post-title">
                             <a href="{{ page.permalink }}">{{ page.title }}</a>
