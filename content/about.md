@@ -4,4 +4,4 @@ template = "blank.html"
 
 ## About
 
-hello zola
+hello [zola](https://www.getzola.org/)
