@@ -47,7 +47,12 @@ main {
       background: $secondary-color;
     }
 
-    a {
+    p > a,
+    li > a,
+    th > a,
+    td > a,
+    pre > a,
+    code > a {
       color: $main-color;
       border-bottom: 1px dashed $main-color;
 
