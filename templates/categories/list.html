@@ -9,6 +9,7 @@
         {% for category in terms %}
         <a href="{{ category.permalink }}">
             {{ category.name }}
+            <span class="dots"></span>
             <span class="count">{{ category.pages | length }}</span>
         </a>
         {% endfor %}

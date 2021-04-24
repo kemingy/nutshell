@@ -253,23 +253,28 @@ main {
   }
 
   &-items {
-    margin: 10px 0;
+    margin: 10px 50px;
 
     a {
       margin: 5px 10px;
       word-wrap: break-word;
       position: relative;
+      align-items: center;
+      display: flex;
+      justify-content: center;
 
       &:hover {
         color: $main-color;
       }
 
+      .dots {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+        flex: 1;
+        margin: 0 4px;
+      }
+
       .count {
-        position: relative;
-        top: -8px;
-        right: -2px;
         color: $main-color;
-        font-size: 12px;
       }
     }
   }
