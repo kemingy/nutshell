@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nutshell</title>
+        <link>https://kemingy.github.io/nutshell</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/nutshell/categories/zhong-wen/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>中文测试文章</title>
+                <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/nutshell/blogs/article-zh/</link>
+                <guid>https://kemingy.github.io/nutshell/blogs/article-zh/</guid>
+                <description>&lt;p&gt;襛纤得衷，脩短合度。
+肩若削成，腰如约素。
+延颈秀项，皓质呈露。
+芳泽无加，铅华弗御。
+云髻峨峨，脩眉联娟。
+丹唇外朗，皓齿内鲜。
+明眸善睐，靥辅承权。
+瑰姿艳逸，仪静体闲。
+柔情绰态，媚于语言。
+奇服旷世，骨像应图。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>
