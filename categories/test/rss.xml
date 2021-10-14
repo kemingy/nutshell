@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nutshell</title>
+        <link>https://kemingy.github.io/nutshell</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/nutshell/categories/test/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Welcome to Zola!</title>
+                <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/nutshell/blogs/article-en/</link>
+                <guid>https://kemingy.github.io/nutshell/blogs/article-en/</guid>
+                <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;&#x2F;code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;&#x2F;code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>
