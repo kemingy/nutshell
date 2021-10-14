@@ -2,7 +2,7 @@
 base_url = "https://kemingy.github.io/nutshell"
 
 compile_sass = true
-generate_rss = true
+generate_feed = true
 
 title = "Nutshell"
 description = ""
